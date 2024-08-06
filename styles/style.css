@@ -7,6 +7,14 @@
     padding: 0;
     }
 
+.icon {
+    /*https://css.gg/info*/
+    text-decoration: none;
+    color: #22D4FD;
+    display: flex;
+    gap: 10px;
+}    
+
 body {
     background-color: black;
     color: #ffffff;
