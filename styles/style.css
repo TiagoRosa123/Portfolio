@@ -2,28 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/info.css');
 
+:root {
+    --cor-principal: #000000;
+    --cor-2: #f6f6f6;
+    --cor-3: #22D4FD;
+    --cor-green: #16FF00;
+    --cor-yellow: #FFED00;
+    --cor-hover: #272727;
+    --Krona-One:"Krona One", sans-serif;
+    --Mont-serrat: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     }
 
-.icon {
-    /*https://css.gg/info*/
-    text-decoration: none;
-    color: #22D4FD;
-    display: flex;
-    gap: 10px;
-}    
-
 body {
-    background-color: black;
-    color: #ffffff;
+    background-color: var(--cor-principal);
+    color: var(--cor-2);
     box-sizing: border-box;
 }
 
 .nav {
     display: flex;
     gap: 80px;
+    
 }
 
 .header {
@@ -31,15 +35,29 @@ body {
 }
 
 .menu{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--Mont-Serrat);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-green);
     text-decoration: none;
 }
 
+.icon {
+    /*https://css.gg/info*/
+    /*https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-github*/
+    /*https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-linkedin-square*/
+    /*https://fontawesome.com/*/
+    text-decoration: none;
+    color: var(--cor-2);
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+} 
+
 .DestaqueNoTitulo {
-    color: #22D4FD;
+    color: var(--cor-green);
 }
 
 .apresentacao {
@@ -50,15 +68,15 @@ body {
 }
 
 .apresentacao__conteudo{
-    width: 630px;
-    height: 415px;
+    width: 500px;
+    height: 510px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--Krona-One);
     font-size: 36px;
     font-weight: 400;
     font-size: 24px;
@@ -66,11 +84,11 @@ body {
 
 .apresentacao__conteudo__texto {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--Mont-Serrat);
 }
 
 .subtitulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--Krona-One);
 }
 
 .apresentacao__links {
@@ -85,15 +103,15 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    color: #22D4FD;
+    color: var(--cor-3);
     width: 378px;
     text-align: center;
-    border: 2px dashed #22D4FD;
+    border: 2px dashed var(--cor-green);
     border-radius: 8px;
     font-size: 24px;
     padding: 21px 0px;
     font-weight: 400;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--Mont-serrat);
     text-decoration: none;
 }
 
@@ -103,36 +121,37 @@ body {
     gap: 16px;
     width: 378px;
     text-align: center;
-    border: 2px dashed white;
+    border: 2px dashed var(--cor-2);
     border-radius: 8px;
     font-size: 24px;
     font-weight: 600px;
     padding: 21px 0px;
-    color: white;
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor-2);
+    font-family: var(--Mont-serrat);
     text-decoration: none;
 }
 
 .apresentacao__links__github:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 .apresentacao__links__linkedin:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .footer {
-    background-color: #22D4FD;
+    background-color: var(--cor-green);
     text-align: center;
-    color: black;
-    font-size: 24px;
+    color: var(--cor-principal);
+    font-size: 28px;
     font-weight: 400;
     border-radius: 16px;
     padding: 24px;
-    font-family: "Montserrat", sans-serif;
+    /*font-family: var(--Mont-Serrat);*/
+    font-family: var(--Mont-serrat);
     text-decoration: none;
 }
 .f{
-    color: black;
+    color: var(--cor-principal);
     text-decoration: none;
 }
 
@@ -154,5 +173,5 @@ body {
 
 .certificate {
     text-decoration: none;
-    color: #22D4FD;;
+    color: var(--cor-principal);;
 }
