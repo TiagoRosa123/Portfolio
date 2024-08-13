@@ -59,15 +59,12 @@ body {
     justify-content: space-between;
 } 
 
-.DestaqueNoTitulo {
-    color: var(--cor-green);
-}
-
 .apresentacao {
     padding: 7% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo{
@@ -80,8 +77,10 @@ body {
 .apresentacao__conteudo__titulo {
     font-family: var(--Krona-One);
     font-size: 2.25rem;
-    font-weight: 400;
-    font-size: 1.5rem;
+}
+
+.DestaqueNoTitulo {
+    color: var(--cor-green);
 }
 
 .apresentacao__conteudo__texto {
@@ -175,4 +174,24 @@ body {
 .certificate {
     text-decoration: none;
     color: var(--cor-principal);;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+    .body {
+        background-color: #117507;
+    }
+    /*.menu {
+        justify-content: center;
+    }*/
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
