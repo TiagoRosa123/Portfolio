@@ -23,10 +23,13 @@ body {
     color: var(--cor-2);
     box-sizing: border-box;
 }
+.img1 {
+    width: 40%;
+}
 
 .nav {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
     
 }
 
@@ -36,7 +39,7 @@ body {
 
 .menu{
     font-family: var(--Mont-Serrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-green);
     text-decoration: none;
@@ -50,8 +53,8 @@ body {
     text-decoration: none;
     color: var(--cor-2);
     display: flex;
-    gap: 10px;
-    font-size: 20px;
+    gap: 0.7rem;
+    font-size: 1.2rem;
     align-items: flex-end;
     justify-content: space-between;
 } 
@@ -68,8 +71,7 @@ body {
 }
 
 .apresentacao__conteudo{
-    width: 500px;
-    height: 510px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -77,13 +79,13 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-family: var(--Krona-One);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--Mont-Serrat);
 }
 
@@ -95,20 +97,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     justify-content: space-between;
 }
 
 .apresentacao__links__linkedin {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
     color: var(--cor-3);
-    width: 378px;
+    width: 68%;
     text-align: center;
     border: 2px dashed var(--cor-green);
-    border-radius: 8px;
-    font-size: 24px;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
     padding: 21px 0px;
     font-weight: 400;
     font-family: var(--Mont-serrat);
@@ -118,12 +120,12 @@ body {
 .apresentacao__links__github {
     display: flex;
     justify-content: space-evenly;
-    gap: 16px;
-    width: 378px;
+    gap: 1rem;
+    width: 68%;
     text-align: center;
     border: 2px dashed var(--cor-2);
-    border-radius: 8px;
-    font-size: 24px;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
     font-weight: 600px;
     padding: 21px 0px;
     color: var(--cor-2);
@@ -142,11 +144,10 @@ body {
     background-color: var(--cor-green);
     text-align: center;
     color: var(--cor-principal);
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 400;
-    border-radius: 16px;
-    padding: 24px;
-    /*font-family: var(--Mont-Serrat);*/
+    border-radius: 1rem;
+    padding: 1.5rem;
     font-family: var(--Mont-serrat);
     text-decoration: none;
 }
@@ -161,7 +162,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .subtitulos {
